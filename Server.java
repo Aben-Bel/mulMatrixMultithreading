@@ -100,6 +100,7 @@ public class Server {
                             Socket incoming = s.accept();
                             atWorker+=1;
 
+                            // Thread for each worker
                             new Thread(new Runnable() {
                                 @Override
                                 public void run() {
